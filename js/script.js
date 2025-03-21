@@ -15,26 +15,27 @@ function loadMenuPagina() {
 
     <div class="menu">
         <a href="index.html" alt="Home">Home</a>
-        <!-- <a href="sobre.html" alt="Gelvazio Camargo">Sobre</a> -->
         <a href="atividades.html" alt="Atividades">Atividades</a>
+
+        <!-- <a href="github.html" alt="GITHUB">Github</a> -->
+        <!-- <a href="login.html" alt="Clerk Login">Login</a> -->
+
+        <!-- <a href="sobre.html" alt="Gelvazio Camargo">Sobre</a> -->
         <!-- <a href="condicionais.html" alt="Atividades">Condicionais</a>-->
         <!-- <a href="apostilas.html" alt="Apostilas">Apostilas</a> -->
-        <a href="github.html" alt="GITHUB">Github</a>
-        <a href="login.html" alt="Clerk Login">Login</a>
 
-        <!--
-        <a href="alunos.html" alt="Alunos Senac">Alunos</a>
-        <a href="sorteio.html" alt="Sorteio">Sorteio Correção</a>
-        <a href="professor.html" alt="Atividades">Professor</a> -->
-        <!-- <a href="frontend.html" alt="Apostilas Frontend">Frontend</a>
-        <a href="backend.html" alt="Apostilas Backend">Backend</a> -->
+        <!-- <a href="alunos.html" alt="Alunos Senac">Alunos</a>-->
+        <!-- <a href="sorteio.html" alt="Sorteio">Sorteio Correção</a> -->
+        <!-- <a href="professor.html" alt="Atividades">Professor</a> -->
+        <!-- <a href="frontend.html" alt="Apostilas Frontend">Frontend</a> -->
+        <!-- <a href="backend.html" alt="Apostilas Backend">Backend</a> -->
         <!-- <a href="jogos.html" alt="Atividades">Jogos</a> -->
         <!-- <a href="free.html" alt="Apostilas CursosFree">Cursos Grátis</a> -->
         <!-- <a href="ide.html" alt="IDE">IDE</a> -->
-        <!-- <a href="contato.html" alt="Contato">Contato</a>
-        <a href="login.html" alt="Login">Login</a> -->
-        <a href="#" alt="Logout" onclick="logout()">Logout</a>
-        <a href="#" alt="Logout">Usuário logado:<input type="text" id="USUARIO_LOGADO_VALIDADO" name="USUARIO_LOGADO_VALIDADO" value="0" disabled></a>
+        <!-- <a href="contato.html" alt="Contato">Contato</a> -->
+        <!-- <a href="login.html" alt="Login">Login</a> -->
+        <!-- <a href="#" alt="Logout" onclick="logout()">Logout</a> -->
+        <!-- <a href="#" alt="Logout">Usuário logado:<input type="text" id="USUARIO_LOGADO_VALIDADO" name="USUARIO_LOGADO_VALIDADO" value="0" disabled></a> -->
     </div>`;
 }
 
