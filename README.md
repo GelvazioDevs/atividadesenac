@@ -20,7 +20,7 @@ desde componentes de hardware e sistemas de arquivos a programas de terceiros, e
    *  Sim pode e isso ajuda a agregar muito mais valor nas suas relações interpessoais e suas habilidades de se comunicar com pessoas e ideias diferentes.
 
 * Onde me inscrever?
-* Shawee - https://shawee.io/pt/
+* Google Startup Weekend, ver no site da DIO:https://www.dio.me/
 
 # Sistemas de Informação
 
