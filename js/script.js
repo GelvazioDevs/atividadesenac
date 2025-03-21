@@ -17,7 +17,7 @@ function loadMenuPagina() {
         <a href="index.html" alt="Home">Home</a>
         <a href="atividades.html" alt="Atividades">Atividades</a>
 
-        <!-- <a href="github.html" alt="GITHUB">Github</a> -->
+        <a href="alunosgithub.html" alt="GITHUB">Github</a>
         <!-- <a href="login.html" alt="Clerk Login">Login</a> -->
 
         <!-- <a href="sobre.html" alt="Gelvazio Camargo">Sobre</a> -->
