@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento - Tech</title>
+
+    <!-- Icone -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <!-- BOOTSTRAP MODAL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/alunos.css"> -->
+    <!-- <link rel="stylesheet" href="css/tables.css"> -->
+    <link rel="stylesheet" href="css/exercises.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- ALERTAS -->
+    <link rel="stylesheet" href="css/alert.css">
+
+    <!-- combobox -->
+    <!-- <link rel="stylesheet" href="css/combobox.css"> -->
+</head>
+<style>
+    body {
+        height: 98vh;
+    }
+    
+    .container-principal {
+        height: 100%;
+    }
+    
+    .perfil_github {
+        border-radius: 50%;
+    }
+    
+    #container-exercicio-atual {
+        background-color: rgb(5, 5, 5);
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        padding-top: 50px;
+        height: 500px;
+    }
+    
+    .container {
+        height: 95%;
+    }
+    
+    .acoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    button {
+        padding: 5px;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .modal-body {
+        width: 100%;
+    }
+    
+    .nome-aluno {
+        color: yellow;
+    }
+    
+    .opcoesExercicios {
+        display: flex;
+    }
+    
+    .checkbox-content {
+        background-color: bisque;
+    }
+    
+    .atividades a {
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    
+    .atividades label {
+        color: #fff;
+    }
+</style>
+
+<body>
+
+    <input type="hidden" id="habilita_carregar_usuario" name="habilita_carregar_usuario" value="1">
+
+    <!-- TOKEN GELVAZIO CAMARGO -->
+    <input type="hidden" id="token_logado" name="token_logado" value="54a80097f23822cb26b6d5a980968601">
+
+    <input type="hidden" id="usucodigo_logado" name="usucodigo_logado" value="1">
+
+    <input type="hidden" id="quantidade_sorteio" name="quantidade_sorteio" value="1">
+
+    <!-- <div style="display: block;">
+        <label for="USUARIO_LOGADO_VALIDADO">USUARIO_LOGADO_VALIDADO:</label>
+        <input type="text" id="USUARIO_LOGADO_VALIDADO" name="USUARIO_LOGADO_VALIDADO" value="0" disabled>
+    </div> -->
+
+    <input type="hidden" id="USUARIO_LOGADO" name="USUARIO_LOGADO" value="">
+
+    <!-- <label for="usucodigo_sorteado">Sorteados:</label> -->
+    <input type="hidden" id="usucodigo_sorteado" name="usucodigo_sorteado" value="1">
+
+    <div class="container-principal">
+        <!-- Inclui o Menu Unico Atraves de JavaScript -->
+        <div id="menu-pagina"></div>
+
+        <div class="menu atividades menu-atividades">
+            <!-- SORTEIO DE CORRECAO -->
+            <!-- <input type="text" id="sorteio_correcao" name="sorteio_correcao" value='[["1",18],["2",23],["3",3],["4",27],["5",25],["7",14],["8",2],["9",13],["10",22],["11",4],["12",16],["15",21],["20",29],["24",7],["31",12]]' disabled width="500"> -->
+
+            <label for="alunos_faltantes">Alunos Faltantes:</label>
+            <input type="text" id="alunos_faltantes" name="alunos_faltantes" value='31,18,23,28,11,16,20,1,19,26,29' width="500">
+
+            <!-- <div class="acaoCarregarExercicios" onclick="executaSorteioCorrecao()">Sortear Correção
+            </div> -->
+        </div>
+
+        <div class="menu atividades menu-atividades">
+
+            <label for="codigoatividade">Atividade:</label>
+            <div class="select">
+                <select name="" id="codigoatividade">
+                    <option value="0">Selecione a Atividade...</option>
+                    <option value="1">Atividade 01 - 26-03-2024</option>
+                    <option value="2">Atividade 02 - 08-04-2024</option>
+                    <option value="3">Atividade 03 - 10-04-2024</option>
+                    <option value="4">Atividade 04 - 17-04-2024</option>
+                    <option value="5">Atividade 05 - 22-04-2024</option>
+                    <option value="6">Atividade 06 - 29-04-2024</option>
+                    <option value="7" selected>Atividade 07 - 30-04-2024</option>
+                </select>
+            </div>
+
+            <label for="combo_usuario">Aluno:</label>
+            <div class="select">
+                <select name="combo_usuario" id="combo_usuario">
+                    <option value="0">Selecione o Aluno...</option>
+                </select>
+            </div>
+
+            <div class="acaoCarregarExercicios" onclick="listarUsuarioSelecionado()">Carregar</div>
+
+            <!-- <div class="acaoCarregarExercicios" onclick="listarTodosUsuariosGithubSemFiltro()">Carregar Todos</div> -->
+
+            <div class="acaoCarregarExercicios" onclick="listarTodosUsuariosGithubOK()">Todos - ok</div>
+
+            <div class="acaoCarregarExercicios" onclick="listarTodosUsuariosGithubPendentes()">Todos Pendentes</div>
+
+            <!-- <div class="acaoCarregarExercicios" onclick="listarTodosUsuariosGithubStatus()">Status Github</div>
+            <div class="acaoCarregarExercicios" onclick="verificaStatusExercicios()">Status Exercicios</div> -->
+
+            <div class="acaoCarregarExercicios" onclick="checkRateLimitGithub()">RATE LIMIT</div>
+
+            <!-- ALERTA SISTEMA -->
+            <button id="acaoAlertaSistema" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAlertaSistema" style="display: none;">Alerta Sistema
+            </button>
+        </div>
+
+        <div class="container" id="container-exercicios">
+            <div class="dados-github" style="display: flex;">
+                <table class="container-table" border="1" style="color: #fff;height: 100px;width: 800px;">
+                    <thead>
+                        <tr>
+                            <th class="containerTable-lblTitle">Código</th>
+                            <th class="containerTable-lblTitle">Github</th>
+                            <th class="containerTable-lblTitle">Nome</th>
+                            <th class="containerTable-lblTitle">Exercício Feito?</th>
+                            <th class="containerTable-lblTitle" align="center">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody class="containerTable-body">
+                        <!--PREENCHIDO ATRAVES DE JAVASCRIPT!!!-->
+                    </tbody>
+                </table>
+
+                <table class="container-table" border="1" style="color: #fff;height: 100px;width: 800px;">
+                    <thead>
+                        <tr>
+                            <th class="containerTable-lblTitle">Código</th>
+                            <th class="containerTable-lblTitle">Descrição</th>
+                            <th class="containerTable-lblTitle">Data Inicial</th>
+                            <th class="containerTable-lblTitle">Data Final(Entrega)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="containerTable-body">
+                        <tr>
+                            <td>1</td>
+                            <td>Atividade 01 - 26/03/2024</td>
+                            <td>26/03/2024</td>
+                            <td>24/04/2024</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Atividade 02 - 08/04/2024</td>
+                            <td>08/04/2024</td>
+                            <td>24/04/2024</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Atividade 03 - 10/04/2024</td>
+                            <td>10/04/2024</td>
+                            <td>29/04/2024</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Atividade 04 - 17/04/2024</td>
+                            <td>17/04/2024</td>
+                            <td>29/04/2024</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Atividade 05 - 22/04/2024</td>
+                            <td>22/04/2024</td>
+                            <td>06/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Atividade 06 - 29/04/2024</td>
+                            <td>29/04/2024</td>
+                            <td>06/05/2024</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Atividade 07 - 30/04/2024</td>
+                            <td>30/04/2024</td>
+                            <td>06/05/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- LISTA DE EXERCICIOS -->
+            <div class="container" id="container-exercicios-dados" style="display: none;padding-left: 0;">
+                <table class="container-table" border="1" style="color: #fff;width: 790px; padding-left: 0;">
+                    <thead>
+                        <tr>
+                            <th class="containerTable-lblTitle">Exercício</th>
+                            <th class="containerTable-lblTitle">Fonte</th>
+                        </tr>
+                    </thead>
+                    <tbody class="containerTable-body" id="table-container-exercicios-dados">
+                        <!--PREENCHIDO ATRAVES DE JAVASCRIPT!!!-->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal - LISTA DE EXERCICIOS-->
+
+            <div class="container">
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <link rel="stylesheet" href="css/modalExercicios.css">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content" style="width: 1000px;">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="acaoFecharModal">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="modal-content">
+                            </div>
+                            <div class="modal-footer menu">
+                                <div id="statuscorrecaoexercicioatual" class="exercicio_atual"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal - Alertas-->
+            <div class="container">
+                <div class="modal fade" id="modalAlertaSistema" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <link rel="stylesheet" href="css/modalExercicios.css">
+                    <link rel="stylesheet" href="css/ajusteModal.css">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content" style="width: 1000px;">
+                            <div class="modal-header">
+                                <!--<h5 class="modal-title" id="exampleModalLongTitle">Alerta Sistema</h5>-->
+                                <h5 class="modal-title">Alerta Sistema</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="modal-content-alertas">
+                                <!-- ALERTAS DE ERROS -->
+                                <div id="alert" class="alert alert-danger" role="alert" style="display: none; height: 150px;">
+                                    This is a primary alert—check it out!
+                                </div>
+                            </div>
+                            <div class="modal-footer menu">
+                                <a href="#" data-dismiss="modal" id="acaoFecharModal2">Fechar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rodape-pagina"></div>
+    </div>
+</body>
+<script async crossorigin="anonymous" data-clerk-publishable-key="pk_test_cXVhbGl0eS1ib3hlci02Ni5jbGVyay5hY2NvdW50cy5kZXYk" src="https://quality-boxer-66.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js" type="text/javascript"></script>
+<script async src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Scripts que esperam a pagina carregar - defer -->
+<script src="js/session.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/atividades.js" defer></script>
+
+<!-- SCRIPS LOCAIS DA PAGINA ATUAL -->
+<script src="js/supabase.js" defer></script>
+<script src="js/sorteio.js" defer></script>
+<script src="js/github.js" defer></script>
+
+</html>

@@ -1,0 +1,87 @@
+<!-- <!doctype html> -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/clerk.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clerk + JavaScript Quickstart</title>
+</head>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/alunos.css">
+<link rel="stylesheet" href="css/exercises.css">
+<link rel="stylesheet" href="css/background.css">
+<link rel="stylesheet" href="css/menu.css">
+
+<!-- ALERTAS -->
+<link rel="stylesheet" href="css/alert.css">
+
+<style>
+    #app {
+        /* background-color: aqua; */
+        display: flex;
+        height: 400px;
+        width: 600px;
+        margin-top: 50px;
+        margin-left: 350px;
+    }
+    
+    .container-principal {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+</style>
+
+<body>
+    <div class="container-principal">
+        <div id="menu-pagina"></div>
+
+        <div id="app"></div>
+
+        <div id="app-login"></div>
+    </div>
+
+    <div id="rodape-pagina"></div>
+
+    <!-- <script src="js/github.js"></script> -->
+    <!-- <script type="module" src="/main.js"></script> -->
+</body>
+
+<script>
+    window.addEventListener("load", async function() {
+        await Clerk.load();
+
+        if (Clerk.user) {
+            document.getElementById("app").innerHTML = `
+                <div id="user-button"></div>
+                <div id="user-profile"></div>
+              `;
+
+            const userButtonDiv = document.getElementById("user-button");
+
+            // Clerk.mountUserButton(userButtonDiv);
+
+            const userProfile = document.getElementById("user-profile");
+
+            Clerk.mountUserProfile(userProfile);
+        } else {
+            document.getElementById("app").innerHTML = `
+            <div id="sign-in"></div>
+          `;
+
+            const signInDiv = document.getElementById("sign-in");
+
+            Clerk.mountSignIn(signInDiv);
+        }
+    });
+</script>
+
+<script async crossorigin="anonymous" data-clerk-publishable-key="pk_test_cXVhbGl0eS1ib3hlci02Ni5jbGVyay5hY2NvdW50cy5kZXYk" src="https://quality-boxer-66.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js" type="text/javascript"></script>
+
+<script src="js/session.js" defer></script>
+<script src="js/script.js" defer></script>
+<script src="js/atividades.js" defer></script>
+
+</html>

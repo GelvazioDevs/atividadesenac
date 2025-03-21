@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento - Tech</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sorteio.css">
+
+    <!-- Icone -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-principal">
+        <!-- Inclui o Menu Unico Atraves de JavaScript -->
+        <div include-html-menu="menu.html"></div>
+
+
+        <div class="container" id="container-exercicios" style="color: #fff;height: 100px;">
+            <h1 style="display: flex; justify-content: center;align-items: center;gap:10px;">
+                <div id="acaoSortearCorrecao" class="acaoCarregarExercicios" onclick="gerarListaSorteioCorrecao()">Gerar Lista Alunos</div>
+                <div id="acaoSortearCorrecao" class="acaoCarregarExercicios" onclick="executaSorteioCorrecao()">Sortear Correção</div>
+            </h1>
+
+            <h1 style="display: flex;justify-content: center;align-items: center;">Dados sorteio</h1>
+
+            <div class="listaSorteioAluno">
+                <div style="display: flex; flex-direction: column;color: #fff; ">
+                    <label for="lista-alunos-corrigir">LISTA ALUNOS - 1</label>
+                    <div id="lista-alunos-corrigir"></div>
+                </div>
+
+                <div style="display: flex;flex-direction: column;color: #fff; ">
+                    <label for="lista-alunos-corrigidos">LISTA ALUNOS - 2</label>
+                    <div id="lista-alunos-corrigidos"></div>
+                </div>
+            </div>
+        </div>
+
+        <div include-html-rodape="rodape.html"></div>
+</body>
+
+
+<script src="js/session.js"></script>
+<script src="js/script.js" defer></script>
+<script src="js/atividades.js"></script>
+
+<script src="js/sorteio.js" defer></script>
+
+</html>

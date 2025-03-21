@@ -1,0 +1,63 @@
+.acaoCarregarExercicios {
+    background-color: #005884c7;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dados-sorteio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    background-color: aqua;
+}
+
+.acaoCarregarExercicios:hover {
+    background-color: #0042845b;
+    cursor: pointer;
+}
+
+.listaAluno {
+    display: flex;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.checkbox label {
+    font-size: 1.5em;
+    color: #000;
+}
+
+.checkbox input {
+    width: 30px;
+    height: 30px;
+}
+
+.checkbox input:hover {
+    cursor: pointer;
+}
+
+.listaSorteioAluno {
+    display: flex;
+    color: #fff;
+    background-color: aqua;
+    gap: 20px;
+    margin: 55px;
+    justify-content: center;
+}
