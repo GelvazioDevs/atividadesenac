@@ -1,172 +1,187 @@
-# Jovem Programador 2024
-https://docs.github.com/pt/education/manage-coursework-with-github-classroom/teach-with-github-classroom
+# Sistemas Operacionais
+* O sistema operacional é um software, ou conjunto de softwares, cuja função é administrar e gerenciar os recursos de um sistema,
+desde componentes de hardware e sistemas de arquivos a programas de terceiros, estabelecendo a interface entre o computador e o usuário.
 
-## Classroom 2024 do github
-https://classroom.github.com/classrooms
+* Windows
+* Linux
+* Apple
+* Android
+* Firefox OS
 
-### Explicacao sobre github classrom
-https://www.youtube.com/watch?v=GhPiD2vICNk
+# LGPD
+    * LGPD
+    A Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018, é a legislação brasileira que regula as atividades de tratamento de dados pessoais e que também altera os artigos 7º e 16 do Marco Civil da Internet
+
+# Hackatons
+* O que são?
+   * Em resumo são maratonas de programação para resolver problemas propostos por empresas
+
+* Posso participar de um Hackaton?
+   *  Sim pode e isso ajuda a agregar muito mais valor nas suas relações interpessoais e suas habilidades de se comunicar com pessoas e ideias diferentes.
+
+* Onde me inscrever?
+* Shawee - https://shawee.io/pt/
+
+# Sistemas de Informação
+
+* O que são?
+	* Tipos de Sistemas
+		* Sistema Web - roda na nuvem.
+		* Sistema Desktop - roda apenas localmente.
+		* Sistema embarcado - roda num aplicativo, por exemplo numa geladeira, no controle remoto, na TV, numa lampada, etc
+* Como funcionam?
+	* Funcionam utilizando a programação, que alinha código com dados armazenados e funções específica para atender cada necessidade.
+
+* Onde estão?
+  * Mercado - ao fazer uma compra voce recebe um cupom fiscal, que passou por um sistema Comercial que calculou todos os valores ate chegar a voce, como:
+	* preco de custo
+	* preco de venda
+	* parcela(a vista,prazo,cheque,cartao,PIX)
+	* Imposto
+	* Gera Contas a Pagar(Contabilidade)
+	* Gera Contas a Receber(Contabilidade)
+    * Gera arquivo de imposto para a contabilidade e para a empresa pagar.
+
+  * Asa de um avião que usa Arduino para controlar os FLAPS.
+  * Freios ABS de um carro para frear com mais eficiência.
+  * Em compras online como Amazon, MagazineLuiza
+  * Em aplicativos de bancos, de jogos,etc
+
+# Estrutura de Tecnologia numa empresa de TI:
+* front end
+	* User Interface
+	* UX Designer
+
+* back end
+	* Desenvolvimento(linguagems de programação, JAVA, PHP, CSharp, Nodejs,Python, Dart(Flutter), Clojure(Nubank usa))
+
+* Mobile
+	* Comunicação atraves de protocolo JSON(Java Script Object Notation)
+	* E possivel consumir o backend diretamente quando este e separado ou apis
+	externas.
+
+# DevOps ou SRE
+ * Pessoa que trabalha com computação relacionada a publicação e manutenção de projetos, geralmente em CLOUD, mas pode ser tambem  em rede local.
 
 
-# Projeto de Testes Correcao
-https://github.com/Ry4nHS/projetos-senac
+# Engenharia de Software
+	* Envolve a qualidade de software, Design de Produtos novos, etc
+    O engenheiro de software é o profissional responsável por projetar e guiar o desenvolvimento de sistemas, aplicativos e programas. O software é o conjunto de instruções lógicas de um computador ou sistema de processamento de dados, que irá orientar o que uma máquina deve fazer.
 
-# Login Senac Google
-E-mail:gelvaziosenac2022@gmail.com
-Senha:Padrao Senac Ano .2022
+# IOT - Internet of Things
+	Internet das coisas
+	Internet das coisas é um conceito que se refere à interconexão digital de objetos cotidianos com a internet, conexão dos objetos mais do que das pessoas. Em outras palavras, a internet das coisas nada mais é que uma rede de objetos físicos capaz de reunir e de transmitir dados
 
-# blog supabase
-* https://www.tabnews.com.br/sestrem/supabase-banco-de-dados-pouco-conhecido-no-brasil-porem-extremamente-poderoso
+# API
+https://aws.amazon.com/pt/what-is/api/#:~:text=API%20significa%20Application%20Programming%20Interface,de%20servi%C3%A7o%20entre%20duas%20aplica%C3%A7%C3%B5es.
 
-# API RESTFULL COM SUPABASE
-https://github.com/supabase/supabase/blob/master/examples/edge-functions/supabase/functions/restful-tasks/index.ts
 
-# Listar Arquivo pelo github
-https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios
+# REST
 
-# Referencia da classe de login do github
-* https://clerk.com/docs/references/javascript/clerk/clerk
+O que e REST e Restfull?
+REST e um padrao de comunicação entre aplicações,
+seja ela front-end,back-end,mobile, IOT, TV, Geladeira, Lâmpada, Asa de um avião, etc
 
-update branch
+# Bancos de Dados
+* O que são?
+	São formas de armazenamento e manipulacao de dados(informações)
+	* Para que servem?
+		* Servem para nos responder perguntas,por exemplo, Quanto uma loja faturou no ano de 2022, vendendo apenas calça djeans para clientes de Rio do Sul, do Bairro Santana e que gastaram mais de 2 mil por compra?
 
-retorno
-```
-[
-    {
-        "name": ".vscode",
-        "path": "Exercicios/.vscode",
-        "sha": "6287e8d4136bedc25e71fa146595e573455fac2f",
-        "size": 0,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/.vscode?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/tree/main/Exercicios/.vscode",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/trees/6287e8d4136bedc25e71fa146595e573455fac2f",
-        "download_url": null,
-        "type": "dir",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/.vscode?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/trees/6287e8d4136bedc25e71fa146595e573455fac2f",
-            "html": "https://github.com/Gelvazio/aulas-senac/tree/main/Exercicios/.vscode"
-        }
-    },
-    {
-        "name": "300 Ideias para Programar.pdf",
-        "path": "Exercicios/300 Ideias para Programar.pdf",
-        "sha": "fd389bf1dc0b511a7fadd54b5bc36effba29961b",
-        "size": 527117,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/300%20Ideias%20para%20Programar.pdf?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/300%20Ideias%20para%20Programar.pdf",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/fd389bf1dc0b511a7fadd54b5bc36effba29961b",
-        "download_url": "https://raw.githubusercontent.com/Gelvazio/aulas-senac/main/Exercicios/300%20Ideias%20para%20Programar.pdf",
-        "type": "file",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/300%20Ideias%20para%20Programar.pdf?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/fd389bf1dc0b511a7fadd54b5bc36effba29961b",
-            "html": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/300%20Ideias%20para%20Programar.pdf"
-        }
-    },
-    {
-        "name": "AtividadesProgramadorDesenvolvimento2024.pptx",
-        "path": "Exercicios/AtividadesProgramadorDesenvolvimento2024.pptx",
-        "sha": "e2d544a9d5d564b0a6ee115b9e97a90c67992a88",
-        "size": 589754,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/AtividadesProgramadorDesenvolvimento2024.pptx?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/AtividadesProgramadorDesenvolvimento2024.pptx",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/e2d544a9d5d564b0a6ee115b9e97a90c67992a88",
-        "download_url": "https://raw.githubusercontent.com/Gelvazio/aulas-senac/main/Exercicios/AtividadesProgramadorDesenvolvimento2024.pptx",
-        "type": "file",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/AtividadesProgramadorDesenvolvimento2024.pptx?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/e2d544a9d5d564b0a6ee115b9e97a90c67992a88",
-            "html": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/AtividadesProgramadorDesenvolvimento2024.pptx"
-        }
-    },
-    {
-        "name": "Exercicios26032024",
-        "path": "Exercicios/Exercicios26032024",
-        "sha": "54702b682af7e8aa0a9e4345deec40c5a9728b1f",
-        "size": 0,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/Exercicios26032024?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/tree/main/Exercicios/Exercicios26032024",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/trees/54702b682af7e8aa0a9e4345deec40c5a9728b1f",
-        "download_url": null,
-        "type": "dir",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/Exercicios26032024?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/trees/54702b682af7e8aa0a9e4345deec40c5a9728b1f",
-            "html": "https://github.com/Gelvazio/aulas-senac/tree/main/Exercicios/Exercicios26032024"
-        }
-    },
-    {
-        "name": "ExplicacaoJava.md",
-        "path": "Exercicios/ExplicacaoJava.md",
-        "sha": "e44425122f81596a56270743f99479aa85b21211",
-        "size": 439,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/ExplicacaoJava.md?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/ExplicacaoJava.md",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/e44425122f81596a56270743f99479aa85b21211",
-        "download_url": "https://raw.githubusercontent.com/Gelvazio/aulas-senac/main/Exercicios/ExplicacaoJava.md",
-        "type": "file",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/ExplicacaoJava.md?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/e44425122f81596a56270743f99479aa85b21211",
-            "html": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/ExplicacaoJava.md"
-        }
-    },
-    {
-        "name": "OLD",
-        "path": "Exercicios/OLD",
-        "sha": "7178eed14194ebb73d6d6f8718480d86a73654b5",
-        "size": 0,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/OLD?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/tree/main/Exercicios/OLD",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/trees/7178eed14194ebb73d6d6f8718480d86a73654b5",
-        "download_url": null,
-        "type": "dir",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/OLD?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/trees/7178eed14194ebb73d6d6f8718480d86a73654b5",
-            "html": "https://github.com/Gelvazio/aulas-senac/tree/main/Exercicios/OLD"
-        }
-    },
-    {
-        "name": "README.md",
-        "path": "Exercicios/README.md",
-        "sha": "5a73ac9034cbb56cc87c238889adc695ac71d695",
-        "size": 1068,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/README.md?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/README.md",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/5a73ac9034cbb56cc87c238889adc695ac71d695",
-        "download_url": "https://raw.githubusercontent.com/Gelvazio/aulas-senac/main/Exercicios/README.md",
-        "type": "file",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/README.md?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/5a73ac9034cbb56cc87c238889adc695ac71d695",
-            "html": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/README.md"
-        }
-    },
-    {
-        "name": "ide-desenvolvimento-INTELLIJ.pptx",
-        "path": "Exercicios/ide-desenvolvimento-INTELLIJ.pptx",
-        "sha": "70028826ab6ad117f18ad4f29a1750ea870ede75",
-        "size": 1106428,
-        "url": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/ide-desenvolvimento-INTELLIJ.pptx?ref=main",
-        "html_url": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/ide-desenvolvimento-INTELLIJ.pptx",
-        "git_url": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/70028826ab6ad117f18ad4f29a1750ea870ede75",
-        "download_url": "https://raw.githubusercontent.com/Gelvazio/aulas-senac/main/Exercicios/ide-desenvolvimento-INTELLIJ.pptx",
-        "type": "file",
-        "_links": {
-            "self": "https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/ide-desenvolvimento-INTELLIJ.pptx?ref=main",
-            "git": "https://api.github.com/repos/Gelvazio/aulas-senac/git/blobs/70028826ab6ad117f18ad4f29a1750ea870ede75",
-            "html": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/ide-desenvolvimento-INTELLIJ.pptx"
-        }
-    }
-]
-```
+	* Como funcionam?
+		* Funcionam de forma relacional(tabelas com linhas e colunas) ou Não relacional(objetos do tipo chave-valor).
 
-# Link dos Exercicios
-https://api.github.com/repos/Gelvazio/aulas-senac/contents/Exercicios/Exercicios26032024/src/exercicio26032024
+# Programacao Funcional
+	* O que e programacao Funcional?
+    Programação funcional é um paradigma de programação que trata a computação como uma avaliação de funções matemáticas e que evita estados ou dados mutáveis. Ela enfatiza a aplicação de funções, em contraste da programação imperativa, que enfatiza mudanças no estado do programa
 
-"html_url": "https://github.com/Gelvazio/aulas-senac/blob/main/Exercicios/Exercicios26032024/src/exercicio26032024/Exercicio01.java
 
-# nova senha banco dados supabase:
-1yTonDUGd78aXMzr
+# Programacao Orientada a Objetos
+   * O que e programacao Orientada a objetos?
+
+	È um paradigma de programação baseado no conceito de "objetos", que podem conter dados na forma de campos, também conhecidos como atributos, e códigos, na forma de procedimentos, também conhecidos como métodos.
+
+
+# Jogos Digitais
+	* Jogos Online com grande repercussão
+	* São desenvolvidos usando principalmente a linguagem CSharp, a qual e muito semelhante ao JAVA ate a parte de Matrizes.
+
+# Design Thinking
+* Serve para mudar o modo de Pensar, pensando de forma diferente do que estamos acostumados no dia a dia
+
+# BigData
+	* Manipula grandes quantidades de dados, milhoes de clientes de um banco, por exemplo as pessoas
+	que receberam Auxilio Emergencial da Caixa
+
+# IA - Inteligência Artificial
+	Envolve a computação relacionada a Inteligência, onde o computador tenta aprender como nós seres humanos.
+
+# Cloud Computing
+  * E relacionado a todos os tipos de software que operam em nuvem.
+  * Atraves da computação em nuvem não e mais preciso que voce tenha um servidor local ligado 24 horas por dia,
+  voce consegue definir regras de acesso de forma Global,
+  ou seja no mundo todo, America,Europa, Asia, Oceania, em qualquer local da terra e ate do espaço que tenha acesso
+  a Internet.
+  Sistemas e Bancos de Dados trabalham de forma escalonada em nuvem com uma elasticidade enorme, podendo subir sua demanda
+  de algumas dezenas de clientes para centenas de milhoes
+  de clientes em minutos!, levantando maquinas virtuais
+   e ambientes totalmente gerenciados via Cloud.
+
+# Startups
+* Uma startup é um grupo de pessoas à procura de um modelo de negócios repetível e escalável, trabalhando em condições de extrema incerteza.
+Uma Startupo procura resolver um problema da sociedade e com isso ganhar muita atenção e dinheiro.
+
+# Marketing Digital
+ E a forma de fazer marketing na INternet, usando Facebook, Instagram, Linkedin,Tiktok, Google AdSense.
+
+# MetaVerso - ver apostila do SEBRAE
+
+# Criptomoedas
+	* Altcoins - Altcoins são criptomoedas alternativas ao Bitcoin
+
+	* Stablecoins - criptomoedas estaveis
+
+	* Queda do Terra Luna -
+	o token Terra (Luna) perdeu praticamente todo o seu valor e caiu de US$ 80 para menos de 1 centavo de dólar
+
+# BlockChain - coração das criptomoedas
+A blockchain (também conhecido como “o protocolo da confiança”) é uma tecnologia de registro distribuído que visa a descentralização como medida de segurança.[1] São bases de registros e dados distribuídos e compartilhados que têm a função de criar um índice global para todas as transações que ocorrem em um determinado mercado. Funciona como um livro-razão, só que de forma pública, compartilhada e universal, que cria consenso e confiança na comunicação direta entre duas partes, ou seja, sem o intermédio de terceiros.
+
+# NFT
+    * NFT
+    NFT é a abreviação de "Non-Fungible Token", que em português significa "Token Não-Fungível". Um token é um símbolo eletrônico que representa um bem. Ele tem características únicas e não pode ser substituído por outra coisa. Quase tudo pode ser um NFT: obras de arte, músicas, imóveis, itens colecionáveis, medalhas olímpicas, assentos em um evento, memes ou até mesmo uma postagem nas redes sociais. Um exemplo é o primeiro tuíte da história, feito pelo cofundador e ex-CEO do Twitter, Jack Dorsey, em 21 de março de 2006. Cerca de 15 anos depois, o NFT foi leiloado por US$ 2,9 milhões. O valor foi convertido para bitcoin e doado a uma instituição social.
+
+# WEB 3.0
+https://tecnoblog.net/responde/o-que-e-web-3-0-e-quais-as-diferencas-para-a-web-2-0/
+
+# Tecnologia 5G - Brasil
+ * Como funciona e para que serve?
+ * O que muda?
+
+ * https://blog.intelbras.com.br/como-5g-vai-mudar-nossa-vida/?gclid=Cj0KCQjwr4eYBhDrARIsANPywCidia96p09sMNpPO6-oaJOMUjDPHyvQuenf3lHlY_4YIFA3owRXtzwaAsw7EALw_wcB
+
+# CURSOS ONLINE E GRATUITOS DE DESENVOLVIMENTO
+
+# Cursos da FIAP Gratuitos
+https://www.fiap.com.br/2022/06/06/fiap-disponibilza-20-cursos-gratuitos-nas-areas-de-tecnologia-e-negocios/
+
+* Cursos para fazer agora indicação professor...
+* JAVA
+* Design Thinking
+
+
+# DIO  - https://www.dio.me/
+# Devinhouse - https://devinhouse.tech/
+# Rocketseat - https://www.rocketseat.com.br/
+# CLOUD Treinamentos - https://www.youtube.com/c/CloudTreinamentos
+
+# Canais Youtube sobre Programação
+* ATEKITA DEV - https://www.youtube.com/channel/UCetRsdZxDQDcgVDJd6erz6g
+
+* Balta.io - https://www.youtube.com/channel/UCgnACLvM9O5lfm9ZBh_d3cg
+
+* Lacerda - https://www.youtube.com/c/BoniekyLacerdaLeal/videos
+
+* Alura - https://www.youtube.com/user/aluracursosonline
+
+* NERI NEITZKE- https://www.youtube.com/user/nerineitzke/videos
